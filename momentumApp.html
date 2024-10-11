@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="momentumApp.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Momentum App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="first">
+      <!-- To-Do List -->
+      <div>
+        <input type="text" id="taskInput" placeholder="Add new task">
+        <button id="addButton">Add</button>
+        <div id="taskList"></div>
+      </div>
+    </div>
+
+    <div class="second">
+      <!-- Time Display -->
+      <div id="time" class="w3-container w3-cursive"></div>
+
+      <!-- User's Name and Greeting -->
+      <div id="greeting" class="w3-container w3-cursive">How you doin', Sire?</div>
+      <input type="text" id="name" placeholder="Name">
+      <button id="editButton">Enter</button>
+
+      <!-- Main Focus -->
+      <div>
+        <h2 class="w3-container w3-cursive">Lets Focus Here!</h3>
+        <input type="text" id="focusInput" placeholder="Type here" class="w3-container w3-cursive">
+        <button onclick="addFocus()" class="w3-container w3-cursive">Set Focus</button>
+        <p id="focusDisplay"></p>
+      </div>
+    </div>
+
+    <div class="third">
+      <!-- Random Quote -->
+      <div>
+        <h2 class="w3-container w3-cursive">Quote of the Day:</h3>
+        <p id="randomQuote"></p>
+        <input type="text" id="newQuote" placeholder="Add new quote" class="w3-container w3-cursive">
+        <button onclick="addQuote()" class="w3-container w3-cursive">Add Quote</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="momentumApp.js"></script>
+</body>
+</html>

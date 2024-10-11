@@ -1,0 +1,78 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    color: white;   
+}
+
+#time {
+    font-size: 8em;
+    -webkit-text-stroke: 1px black;
+}
+
+#greeting {
+    -webkit-text-stroke: 1px black;
+}
+
+h2{
+    -webkit-text-stroke: .5px black;
+}
+
+#greeting {
+    font-size: 4em;
+}
+
+#randomBackground {
+    opacity: 1;
+}
+
+.completed {
+    text-decoration: line-through black;
+}
+
+#focusDisplay {
+    font-size: 1em;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        ". main ."
+        ". footer .";
+    height: 100vh; /* Full viewport height */
+    grid-template-rows: auto 1fr auto; /* Flexible middle section */
+}
+
+/* To-do list (upper-right) */
+.first {
+    grid-area: header;
+    justify-self: end; /* Aligns the to-do list to the right */
+    padding: 20px;
+    width: 300px; /* Set a fixed width for the task list */
+    max-height: 500px; /* Limit the height to prevent overflow */
+    overflow-y: auto; /* Make it scrollable if content exceeds height */
+}
+
+/* Ensure .second section remains centered */
+.second {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Ensure .third section remains centered */
+.third {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
